@@ -1,0 +1,1661 @@
+
+  
+
+  
+     
+     
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+      }
+     body{
+         height: 4000px;
+          background: radial-gradient(ellipse at top, #0a0f22 8%, #000000 100%); 
+        
+       
+        
+     }
+
+      #intro{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        background: radial-gradient(ellipse at bottom, #0e152e 8%, #000000 100%);
+       
+      }
+
+      .card {
+        cursor: cell;
+        margin: 10px 10px;
+        padding: 10px 10px;
+        width: 800px;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.2);
+        opacity: 1.3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        
+        
+     
+      }
+
+      .card:hover{
+        color: #111; 
+        background: greenyellow; 
+        box-shadow: 0 0 100px greenyellow; 
+      }
+     
+      #hello{
+          font-family: 'Orbitron', sans-serif;
+          font-size: 35px;
+          color: silver;
+      }
+      #hello:hover{
+        color: #111; 
+      }
+      #name{
+        font-family: 'Ubuntu', sans-serif;
+          font-size: 55px;
+          color: rgb(101, 86, 236); 
+      }
+
+      #name:hover{
+          
+          color: rgb(6, 3, 168); 
+      }
+    
+      #works{
+          margin: 10px 10px;
+          padding: 10px 10px;
+      }
+      .kaam{
+        
+        
+        font-family: 'Orbitron', sans-serif;
+        margin: 10px -2px;
+        padding: 10px 14px;
+        
+    
+    }
+
+    .kaam:hover{
+        font-size: 20px;
+        font: bold;
+        color: seagreen;
+    }
+
+    #img{
+        
+      
+       height: 80px;
+       z-index: +1;
+       position: fixed;
+       transform:  rotate(324deg) ;
+       
+       
+      
+
+       
+       /* margin: -839px -57px; */
+       
+    }
+    
+    #image{
+        margin-top:-576px;
+        z-index: +2;
+        position: fixed;
+        margin-left: auto;
+        margin-right: 111px;
+        
+
+
+    }
+    #hole{
+      position: absolute;
+      margin: 847px 46%;
+      z-index: 200;
+      height: 100px;
+    }
+    /* @media only screen and (max-height: 824px){
+      #hole{
+        position: absolute;
+        margin: 773px 46%;
+        height: 100px;
+      }
+    }
+    @media only screen and (max-height: 724px){
+      #hole{
+        position: absolute;
+        margin: 756px 46%;
+        height: 100px;
+      }
+    }
+    @media only screen and (max-height: 624px){
+      #hole{
+        position: absolute;
+        margin: 694px 46%;
+        height: 100px;
+      }
+    }
+    @media only screen and (max-height: 524px){
+      #hole{
+        position: absolute;
+        margin: 646px 46%;
+        height: 100px;
+      }
+    } */
+
+    
+
+    
+
+    
+    #forwork{
+      
+        align-items:center;
+        justify-content: center;
+        margin:-2px 0%;
+        width: 100%;
+        height: 900px;
+        background: radial-gradient(ellipse at top, #0e152e 8%, #000000 100%);
+        opacity: 1.3;;
+        display: grid;
+        grid-gap: 23%;
+        grid-template-columns:100px 100px 100px;
+        
+        
+       
+    }
+
+
+   #codingimg{
+     position: absolute;
+     margin: 56px 5%;
+     z-index: 3;
+   }
+   #gameimg{
+    position: absolute;
+    margin: 538px 75%;
+    
+    transition: all 1s ease-in-out;
+    z-index: 3;
+    
+    
+   }
+
+  
+
+      
+	
+	
+
+   
+   /* @keyframes float {
+    0% {
+      
+      transform: translatey(0px);
+    }
+    50% {
+      
+      transform: translatey(-20px);
+    }
+    100% {
+      
+      transform: translatey(0px);
+    }
+  } */
+
+
+#donut{
+  position: absolute;
+    margin: 559px 28%;
+    animation-name: donut;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            z-index: 3;
+            animation-direction: alternate-reverse;
+            
+            
+    
+}
+@keyframes donut {
+  0% {
+      
+    transform: rotate(120deg);
+  }
+  50% {
+    
+    transform: rotate(240deg);
+  }
+  100% {
+    
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+   .field1{
+    
+    background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+    background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+    height: 500px;
+    width: 400px;
+    margin: 2px -150%;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    filter: blur(3px);
+    overflow: hidden;
+    
+    
+}
+.field1:hover{
+  transform: translate(0px, -5px);
+  filter: blur(0px);
+}
+.field1 img{
+  height: 100px;
+  margin: 70px 144px;
+}
+
+.field1 p{
+  font-family: 'Stylish', sans-serif;
+  padding: 7px 2px;
+  
+  width: 100%;
+  margin: 7px 9px;
+  font-size: 20px;
+  font: bold;
+}
+
+.field1 h1 {
+  position: absolute;
+  width: 100%;
+  margin: -71px 74px;
+  font-size: 30px;
+  color: rgb(235, 202, 235);
+  font-family: monospace;
+}
+
+
+
+
+
+
+
+.field2{
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+  background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+  background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+  height: 500px;
+  width: 400px;
+  margin: 2px -150%;
+  padding: 2px 2px;
+border-radius: 15px;
+transition: all 0.3s ease-in-out;
+filter: blur(3px);
+
+}
+.field2:hover{
+  transform: translate(0px, -5px);
+  
+  filter: blur(0px);
+}
+
+.field2 img{
+  height: 260px;
+  margin: 2px 60px;
+}
+
+.field2 p{
+  font-family: 'Stylish', sans-serif;
+  padding: 7px 2px;
+  
+  width: 100%;
+  margin: -49px 14px;
+  
+  font-size: 20px;
+  font: bold;
+}
+
+
+.gradient-text{
+  
+  
+  margin: 56px 3px;
+  font-family:"Abril Fatface", sans-serif;
+  background: linear-gradient(to right, crimson,pink,springgreen);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+  color:rgba(0,0,0,1);
+  font-size:28px;
+  width: 100%;
+ 
+  
+  display:block;
+  text-align:center;
+  transition: color .2s ease-in-out;
+ 
+  font-weight:900;
+  color:rgba(0,0,0,0);
+}
+
+@keyframes rainbow { 
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
+  
+ 
+	
+
+	
+	
+
+.field2 h1{
+  position: absolute;
+  margin: -112px 134px;
+  font-family: monospace;
+  font-size: 30px;
+  color: rgb(235, 202, 235);
+}
+
+
+
+
+
+.field3{
+  background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+  background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+  height: 500px;
+  width: 400px;
+  margin: 2px -150%;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  filter: blur(3px);
+  overflow: hidden;
+  
+
+}
+.field3:hover{
+  transform: translate(0px, -5px);
+  
+  filter: blur(0px);
+}
+.field3 img{
+  position: absolute;
+  height: 100px;
+  margin: 65px 145px;
+}
+
+.field3 h1{
+  position: absolute;
+  width: 100%;
+  margin: 173px 70px;
+  font-size: 30px;
+  color: rgb(235, 202, 235);
+  font-family: monospace;
+}
+.field3 p{
+  position: absolute;
+  font-family: 'Stylish', sans-serif;
+  width: 100%;
+  margin:  231px 1px;
+  padding: 2px 11px;
+  font-size: 20px;
+  font: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+
+
+
+
+#socialhead {
+  display: flex;
+  height: 800px;
+  overflow: hidden;
+  width: 100vw;
+  background: radial-gradient(ellipse at top, #0e152e 8%, #000000 100%);
+  
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.socials img{
+  height: 100px;
+}
+#twitter, #github, #facebook, #linkdin {
+  
+  
+  background-color: #18191f;
+  color: #fff;
+  
+  border-radius: 10px;
+  padding: 11px 19px;
+  margin: 0 40px;
+  
+}
+
+#twitter {
+  
+ 
+  animation: animate 4s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+    box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00010080;
+    box-shadow: 0 0 15px #0072ff, 0 0 25px #0072ff, 0 0 30px #0072ff,
+    0 0 50px #0072ff;
+}
+
+#twitter:hover{
+  background: blue;
+  box-shadow: 2px 2px 2px #e40b0b80, 10px 1px 12px #f3040480,
+  2px 2px 10px #eb050580, 2px 2px 3px #f3101080, inset 2px 2px 10px #ff070780,
+  inset 2px 2px 10px #eb040480, inset 2px 2px 10px #fd000080,
+  inset 2px 2px 10px #fa001580;
+  box-shadow: 0 0 23px rgb(235, 0, 20), 0 0 50px #ff0000, 0 0 75px #ff0202,
+  0 0 100px #ff0000;
+  
+}
+
+
+#facebook {
+  
+  animation: animate 5s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+    box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00010080;
+    box-shadow: 0 0 15px #0072ff, 0 0 25px #0072ff, 0 0 30px #0072ff,
+    0 0 50px #0072ff;
+}
+#linkdin{
+  animation: animate 8s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+    box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00010080;
+    box-shadow: 0 0 15px #0072ff, 0 0 25px #0072ff, 0 0 30px #0072ff,
+    0 0 50px #0072ff;
+}
+
+#linkdin:hover{
+  background: blue;
+box-shadow: 2px 2px 2px #e40b0b80, 10px 1px 12px #f3040480,
+2px 2px 10px #eb050580, 2px 2px 3px #f3101080, inset 2px 2px 10px #ff070780,
+inset 2px 2px 10px #eb040480, inset 2px 2px 10px #fd000080,
+inset 2px 2px 10px #fa001580;
+box-shadow: 0 0 50px rgb(235, 0, 20), 0 0 100px #ff0000, 0 0 150px #ff0202,
+0 0 200px #ff0000;
+}
+
+
+#facebook:hover{
+background: blue;
+box-shadow: 2px 2px 2px #e40b0b80, 10px 1px 12px #f3040480,
+2px 2px 10px #eb050580, 2px 2px 3px #f3101080, inset 2px 2px 10px #ff070780,
+inset 2px 2px 10px #eb040480, inset 2px 2px 10px #fd000080,
+inset 2px 2px 10px #fa001580;
+box-shadow: 0 0 50px rgb(235, 0, 20), 0 0 100px #ff0000, 0 0 150px #ff0202,
+0 0 200px #ff0000;
+}
+#github {
+  
+  animation: animate 6s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+    box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00010080;
+    box-shadow: 0 0 15px #0072ff, 0 0 35px #0072ff, 0 0 30px #0072ff,
+    0 0 50px #0072ff;
+}
+
+#github:hover{
+  background: blue;
+box-shadow: 2px 2px 2px #e40b0b80, 10px 1px 12px #f3040480,
+2px 2px 10px #eb050580, 2px 2px 3px #f3101080, inset 2px 2px 10px #ff070780,
+inset 2px 2px 10px #eb040480, inset 2px 2px 10px #fd000080,
+inset 2px 2px 10px #fa001580;
+box-shadow: 0 0 50px rgb(235, 0, 20), 0 0 100px #ff0000, 0 0 150px #ff0202,
+0 0 200px #ff0000;
+}
+
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+ 
+
+
+#typeme{
+  
+  height: 1000px;
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+ 
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #0e152e 8%, #000000 100%);
+  
+}
+
+ 
+
+
+#typeme .box{
+   
+  height: 400px;  
+  width: 1000px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 2px 2px;
+  overflow: hidden;
+
+} 
+
+
+.hint2 {
+  margin: 2px 2px;
+  font-size: 15px;
+  color: #00fff2;
+  text-shadow: 0px 0px 4px #00fff2;
+}
+
+#container {
+  /* border: 2px solid red; */
+  color: #eee;
+  font-size: 2rem;
+  font-family: sans-serif;
+  text-shadow: 0px 0px 4px #eee;
+  padding: 1rem 2rem;
+  line-height: 1.5em;
+}
+.hidden {
+  display: none;
+}
+input {
+  display: inline-block;
+  width: 1ch;
+  color: #eee;
+  font-size: 2rem;
+  font-family: sans-serif;
+  text-shadow: 0px 0px 4px #eee;
+  background: #333;
+  border: 0;
+  padding: 0 0.1em;
+  border-radius: 4px;
+}
+
+
+
+
+#typeme .box ul{
+  
+  display: flex;
+  
+  margin: 8px 11px;
+}
+#typeme .box ul li{
+  
+  margin: 4px 4px;
+  padding: 2px 13px;
+}
+#typeme .box #red{
+  
+  background-color: rgb(236, 74, 74);
+  border-radius: 50%;
+}
+
+
+#typeme .box #yellow{
+  
+  background-color: rgb(231, 231, 111);
+  border-radius: 50%; 
+}
+
+#typeme .box #blue{
+  background-color: rgb(94, 94, 226);
+  border-radius: 50%;
+}
+
+#typeme .box #com{
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 2px 287px;
+} 
+
+#typeme .box #one{
+  
+  margin: 7px 209px;
+  padding: 2px 2px;
+  background: #ffffff;
+}
+
+#typeme .box #text{
+  height: 340px;
+  
+  
+  width: 100%;
+  background-color: rgb(29, 24, 15);
+  color: rgb(238, 94, 94);
+  margin: 2px 2px;
+  font-size: 22px;
+  padding: 3px 6px;
+  
+  
+ 
+}
+
+#typeme .box #text:hover{
+  color: green;
+}
+
+/* 
+Responsive section */
+
+
+@media only screen and (max-width: 1690px){
+
+  #donut{
+    margin: 559px 24%;
+  }
+  #codingimg{
+    height: 190px;
+    margin: 86px 5%;
+  }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1500px){
+  #hole{
+    margin: 847px 45%;
+  }
+
+  @media only screen and (max-width: 1374px){
+    .field1 img {
+      height: 100px;
+      margin: 70px 137px;
+  }
+    .field1 h1 {
+      
+      margin: -71px 61px;
+     
+  }
+    .field1 p {
+      font-size: 15px;
+      
+      margin: -23px 9px;
+      
+  }
+    #forwork{
+        
+        
+          
+          margin:-2px 0px;
+          padding: 12px 2px;
+          width: 100%;
+          height: 1200px;
+          background: radial-gradient(ellipse at top, #0e152e 8%, #000000 100%);
+          opacity: 1.3;;
+         display: inline-block;
+         overflow: hidden;
+  
+      }
+     .field1{
+           height: 350px;
+           width: 380px;
+             margin: 25px 35%;
+     }
+     .field2{
+      height:  397px;
+      width: 380px;
+     margin: 25px 35%;
+  }
+  
+  .field3{
+    height: 350px;
+    width: 380px;
+    margin: 25px 35%;
+  }
+  
+  #donut {
+    margin:414px 25%;
+  }
+  #codingimg {
+    margin: 65px 60%;
+    height: 180px;
+  }
+  #gameimg{
+    margin: 750px 65%;
+  }
+  .field3 p {
+    margin:214px 12px;
+  }
+  .field3 h1 {
+    margin:173px 52px;
+  }
+  .field2 p {
+   
+    margin: -49px 2px;
+  
+  }
+  
+  .gradient-text {
+    margin: -33px 3px;
+  }
+  }
+ 
+  }
+  @media only screen and (max-width: 1150px){
+    #hole{
+      margin: 847px 44%;
+    }
+    }
+  
+  
+  
+  
+    @media only screen and (max-width: 1104px){
+      #typeme .box{
+        
+      width: 800px;
+    }
+    #typeme .button{
+      position: absolute;
+      margin: -60px 704px;
+    }
+    #typeme .box #com {
+      padding: 2px 221px;
+    }
+   
+  }
+  
+  @media only screen and (max-width: 1104px){
+    .field1{
+      height: 350px;
+      width: 380px;
+        margin: 25px 33%;
+  }
+  .field2{
+  height:  397px;
+  width: 380px;
+  margin: 25px 33%;
+  }
+  
+  .field3{
+  height: 350px;
+  width: 380px;
+  margin: 25px 33%;
+  }
+
+  #object img{
+    height: 200px;
+    
+  }
+  #hole{
+    margin: 847px 43%;
+  }
+  #donut {
+    margin:414px 19%;
+    height: 180px;
+  }
+  #codingimg {
+    margin: 45px 60%;
+    height: 160px;
+  }
+  #gameimg{
+    margin: 820px 60%;
+     height: 180px;
+  }
+  .socials img{
+    height: 95px;
+  }
+  
+  }
+
+  @media only screen and (max-width: 960px){
+    .field1{
+      height: 350px;
+      width: 380px;
+        margin: 25px 30%;
+  }
+  .field2{
+  height:  397px;
+  width: 380px;
+  margin: 25px 30%;
+  }
+  
+  .field3{
+  height: 350px;
+  width: 380px;
+  margin: 25px 30%;
+  }
+
+  #typeme .box{
+    
+    width: 700px;
+  }
+  #typeme .button{
+    position: absolute;
+    margin: -60px 602px;
+  }
+  #typeme .box #com {
+    padding: 2px 165px;
+  }
+  #typeme #container {
+
+    font-size: 1.4rem;
+  }
+  
+  #type input{
+    font-size: 1.4rem;
+  }
+  }
+
+
+
+  @media only screen and (max-width: 810px){
+    .card {
+      width: 640px;
+      height: 400px;
+    }
+  .kaam{
+        font-size: 13px;
+    }
+    #object {
+      display: none;
+    }
+    
+  #object img{
+    display: none;
+    
+  }
+  #hole{
+    display: none;
+  }
+  .field1{
+    height: 350px;
+    width: 380px;
+      margin: 25px 26%;
+}
+.field2{
+height:  397px;
+width: 380px;
+margin: 25px 26%;
+}
+
+.field3{
+height: 350px;
+width: 380px;
+margin: 25px 26%;
+}
+#donut {
+  margin:414px 15%;
+  height: 150px;
+}
+#codingimg {
+  margin: 64px 60%;
+  height: 150px;
+}
+#gameimg{
+  margin: 820px 60%;
+   height: 150px;
+}
+  .socials img{
+    height: 60px;
+  }
+#typeme #container {
+
+  font-size: 1.2rem;
+}
+
+#type input{
+  font-size: 1.2rem;
+}
+  }
+
+
+
+  @media only screen and (max-width: 710px){
+    #typeme .box{
+        
+      width: 550px;
+    }
+
+    #typeme .button{
+      position: absolute;
+      margin: -60px 452px;
+    }
+
+    #typeme #container {
+
+      font-size: 1rem;
+    }
+    
+    #type input{
+      font-size: 1rem;
+    }
+    #typeme .box #com {
+      padding: 2px 81px;
+    }
+    .field1{
+      height: 350px;
+      width: 380px;
+        margin: 25px 20%;
+  }
+  .field2{
+  height:  397px;
+  width: 380px;
+  margin: 25px 20%;
+  }
+  
+  .field3{
+  height: 350px;
+  width: 380px;
+  margin: 25px 20%;
+  }
+  .card {
+    width: 570px;
+    height: 370px;
+  }
+  #hello{
+    font-size: 22px;
+}
+
+#name{
+    font-size: 39px;
+}
+.kaam{
+  font-size: 11px;
+}
+#twitter, #github, #facebook, #linkdin {
+  
+  margin: 0 15px;
+}
+#hole{
+  display: none;
+}
+  }
+
+  @media only screen and (max-width: 600px){
+    .card {
+      width: 440px;
+      height: 370px;
+      margin: 10px 10px;
+      padding: 10px 10px;
+
+    }
+    .kaam{
+      font-size: 12px;
+      margin: 10px -11px;
+      padding: 10px 14px;
+  }
+  #name{
+    font-size: 30px;
+}
+#typeme .box{
+    
+  width: 400px;
+}
+#typeme .button{
+  position: absolute;
+  margin: -60px 300px;
+}
+#typeme .box #com {
+  padding: 2px 24px;
+}
+#donut {
+  margin:414px 13%;
+  height: 130px;
+}
+#codingimg {
+  margin: 83px 59%;
+  height: 130px;
+}
+#gameimg{
+  margin: 820px 59%;
+   height: 130px;
+}
+
+.field1{
+  height: 350px;
+  width: 380px;
+    margin: 25px 17%;
+}
+.field2{
+height:  397px;
+width: 380px;
+margin: 25px 17%;
+}
+
+.field3{
+height: 350px;
+width: 380px;
+margin: 25px 17%;
+}
+  }
+
+
+
+  @media only screen and (max-width: 550px){
+    .field1 p {
+      font-size: 15px;
+      margin: -23px 4px;
+  }
+    .field1 img {
+      height: 100px;
+      margin: 70px 124px;
+  }
+    .field1 h1 {
+      margin: -71px 49px;
+  }
+
+    .field1{
+      height: 350px;
+      width: 350px;
+        margin: 25px 17%;
+    }
+    .field2{
+    height:  397px;
+    width: 350px;
+    margin: 25px 17%;
+    }
+    
+    .field3{
+    height: 350px;
+    width: 350px;
+    margin: 25px 17%;
+    }
+
+    .field2 img{
+      margin: 2px 39px;
+    }
+     .field2 h1{
+      margin: -112px 114px;
+     }
+     .field2 p{
+       font-size: 18px;
+     }
+
+     .field3 img{
+      margin: 65px 123px;
+     }
+     .field3 p {
+      margin: 214px 8px;
+     }
+     #object {
+      display: none;
+    }
+    
+  #object img{
+    display: none;
+    
+  }
+}
+
+@media only screen and (max-width: 490px){
+  .field1{
+    height: 350px;
+    width: 350px;
+      margin: 25px 15%;
+  }
+  .field2{
+  height:  397px;
+  width: 350px;
+  margin: 25px 15%;
+  }
+  
+  .field3{
+  height: 350px;
+  width: 350px;
+  margin: 25px 15%;
+  }
+  #hole{
+    display: none;
+  }
+  .socials img{
+    height: 50px;
+  }
+  #twitter, #github, #facebook, #linkdin {
+  
+    margin: 0 7px;
+    border-radius: 10px;
+}
+.card {
+  width: 370px;
+  height: 370px;
+  margin: 10px 10px;
+  padding: 10px 10px;
+
+}
+#works {
+  margin: 10px 10px;
+  padding: 0px 4px;
+  overflow: hidden;
+}
+.kaam{
+  font-size: 10px;
+}
+#donut {
+  margin: 365px 11%;
+  height: 130px;
+}
+#codingimg {
+  margin: 104px 56%;
+  height: 130px;
+}
+#gameimg{
+  margin: 817px 57%;
+   height: 130px;
+}
+}
+
+
+@media only screen and (max-width: 460px){
+  .field1{
+    height: 350px;
+    width: 350px;
+      margin: 25px 12%;
+  }
+  .field2{
+  height:  397px;
+  width: 350px;
+  margin: 25px 12%;
+  }
+  
+  .field3{
+  height: 350px;
+  width: 350px;
+  margin: 25px 12%;
+  }
+  #hole{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 436px){
+  .field1{
+    height: 350px;
+    width: 350px;
+      margin: 25px 10%;
+  }
+  .field2{
+  height:  397px;
+  width: 350px;
+  margin: 25px 10%;
+  }
+  
+  .field3{
+  height: 350px;
+  width: 350px;
+  margin: 25px 10%;
+  }
+  #hole{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px){
+  .field1{
+    height: 350px;
+    width: 350px;
+      margin: 25px 8%;
+  }
+  .field2{
+  height:  397px;
+  width: 350px;
+  margin: 25px 8%;
+  }
+  
+  .field3{
+  height: 350px;
+  width: 350px;
+  margin: 25px 8%;
+  }
+  #hole{
+    display: none;
+  }
+  #donut {
+    margin: 365px 4%;
+    height: 130px;
+  }
+  #typeme #container {
+
+    font-size: 0.7rem;
+  }
+  
+  #type input{
+    font-size: 0.7rem;
+  }
+}
+
+
+ @media only screen and (max-width: 399px){
+  .field1 h1 {
+    margin: -71px 38px;
+}
+    .card {
+    width: 370px;
+  }  
+  #hello {
+    font-size: 17px;
+} 
+
+
+ #name {
+  font-size: 25px;
+} 
+ .kaam:hover{
+  font-size: 10px;
+  font: bold;
+  color: seagreen;
+} 
+ .field1{
+  height: 350px;
+  width: 329px;
+    margin: 25px 6%;
+} 
+ .field2{
+height:  397px;
+width: 329px;
+margin: 25px 6%;
+} 
+
+ .field3{
+height: 350px;
+width: 329px;
+margin: 25px 6%;
+} 
+   
+#object {
+  display: none;
+}
+
+#object img{
+display: none;
+
+}
+#typeme .box {
+  width: 353px;
+ }
+ #typeme .button {
+  position: absolute;
+  margin: -60px 254px;
+}
+.socials img{
+  height: 40px;
+}
+#twitter, #github, #facebook, #linkdin {
+  font-size: 2.5rem;
+  margin: 4px;
+  
+}
+#gameimg {
+  margin: 811px 55%;
+  height: 120px;
+}
+#codingimg {
+  margin: 104px 55%;
+  height: 120px;
+}
+.field2 p {
+  font-size: 17px;
+  margin: -49px 6px;
+}
+.field3 p {
+  
+  font-size: 17px;
+  
+}
+.field3 h1 {
+  margin: 173px 41px;
+}
+.field2 h1 {
+  margin: -112px 110px;
+}
+.field2 img {
+  margin: 2px 35px;
+}
+  
+
+}
+
+
+
+
+@media only screen and (max-width: 375px){
+  .card {
+  width: 356px;
+}  
+#hello {
+  font-size: 17px;
+} 
+
+
+#name {
+font-size: 25px;
+} 
+.kaam {
+  font-size: 9px;
+}
+.kaam:hover{
+font-size: 10px;
+font: bold;
+color: seagreen;
+} 
+.field1{
+height: 350px;
+width: 329px;
+  margin: 25px 6%;
+} 
+.field2{
+height:  397px;
+width: 329px;
+margin: 25px 6%;
+} 
+
+.field3{
+height: 350px;
+width: 329px;
+margin: 25px 6%;
+} 
+ 
+#object {
+  display: none;
+}
+
+#object img{
+display: none;
+
+}
+#typeme .box {
+width: 353px;
+}
+#typeme .button {
+
+margin: -60px 254px;
+}
+.socials img{
+  height: 30px;
+}
+#twitter, #github, #facebook, #linkdin {
+font-size: 2.5rem;
+margin: 4px;
+
+}
+#gameimg {
+margin: 811px 55%;
+height: 120px;
+}
+#codingimg {
+margin: 104px 55%;
+height: 120px;
+}
+.field2 p {
+font-size: 17px;
+margin: -49px 6px;
+}
+.field3 p {
+
+font-size: 17px;
+
+}
+.field3 h1 {
+margin: 173px 41px;
+}
+.field2 h1 {
+margin: -112px 110px;
+}
+.field2 img {
+margin: 2px 35px;
+}
+#hole {
+  display: none;
+}
+
+
+}
+
+@media only screen and (max-width: 360px){
+  .card {
+    width: 310px;
+}
+
+
+.kaam {
+  font-size: 8px;
+  margin: 10px -7px;
+  padding: 10px 9px;
+}
+.kaam:hover{
+  font-size: 8px;
+  font: bold;
+  color: seagreen;
+}
+.field1{
+  height: 350px;
+  width: 310px;
+    margin: 25px 4%;
+  } 
+  .field2{
+  height:  397px;
+  width: 310px;
+  margin: 25px 4%;
+  } 
+  
+  .field3{
+  height: 350px;
+  width: 310px;
+  margin: 25px 4%;
+  } 
+  #codingimg {
+    margin: 104px 54%;
+    height: 110px;
+  }
+  #gameimg {
+    margin: 811px 54%;
+    height: 102px;
+}
+.field2 p {
+  font-size: 15px;
+  margin: -49px 12px;
+}
+.field2 img {
+  margin: 2px 26px;
+}
+.field2 h1 {
+  margin: -112px 101px;
+}
+.field3 img {
+  margin: 65px 109px;
+}
+.field3 h1 {
+  margin: 173px 24px;
+}
+#typeme .box {
+  width: 309px;
+}
+#typeme .button {
+  
+  margin: -60px 212px;
+}
+#twitter, #github, #facebook, #linkdin {
+  font-size: 2.5rem;
+  margin: 4px;
+}
+.socials img{
+  height: 30px;
+}
+}
+
+
+
+
+     
+
+
+
+
+
+
+
+@media only screen and (max-width: 330px){
+  .socials img{
+    height: 30px;
+  }
+.field1{
+  height: 350px;
+  width: 310px;
+    margin: 25px 1.3%;
+  } 
+  .field2{
+  height:  397px;
+  width: 310px;
+  margin: 25px 1.3%;
+  } 
+  
+  .field3{
+  height: 350px;
+  width: 310px;
+  margin: 25px 1.3%;
+  } 
+  #typeme #container {
+
+    font-size: 0.7rem;
+  }
+  
+  #type input{
+    font-size: 0.7rem;
+  }
+}
+
+
+ 
+
+
+
+
+
+
+  
+
+
+
+
+
+
+.button {
+  position: absolute;
+  
+  margin: -60px 895px;
+  height: 50px;
+  min-width: 100px;
+  background: #348aa7;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 3px;
+  box-shadow: 0 5px 0px #348aa7;
+ 
+}
+
+.button:hover {
+  background: #2e7a94;
+  box-shadow: 0 4px 1px #2e7a94;
+  
+  transition: all 0.1s ease-in;
+}
+.button:active {
+  transform: translateY(4px);
+  border-bottom-width: 2px;
+  box-shadow: none;
+}
+
+
+
+
+#object {
+  position: fixed;
+  left: 0;
+  bottom: 40%;
+  
+  border-radius:5px;
+  transform: rotate(30deg);
+  
+  
+}
+
+
+#foot{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  float: left;
+}
+
+#foot span{
+  color: wheat;
+  margin: 2px 2px;
+}
